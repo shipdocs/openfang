@@ -2853,6 +2853,37 @@ fn builtin_models() -> Vec<ModelCatalogEntry> {
             aliases: vec!["codegeex".into()],
         },
         // ══════════════════════════════════════════════════════════════
+        // Z.AI Coding / GLM Coding Models (2)
+        // ══════════════════════════════════════════════════════════════
+        ModelCatalogEntry {
+            id: "glm-5-coding".into(),
+            display_name: "GLM-5 Coding".into(),
+            provider: "zai_coding".into(),
+            tier: ModelTier::Frontier,
+            context_window: 131_072,
+            max_output_tokens: 16_384,
+            input_cost_per_m: 2.00,
+            output_cost_per_m: 8.00,
+            supports_tools: true,
+            supports_vision: false,
+            supports_streaming: true,
+            aliases: vec!["glm-5-code".into(), "glm-coding".into()],
+        },
+        ModelCatalogEntry {
+            id: "glm-4.7-coding".into(),
+            display_name: "GLM-4.7 Coding".into(),
+            provider: "zai_coding".into(),
+            tier: ModelTier::Smart,
+            context_window: 131_072,
+            max_output_tokens: 16_384,
+            input_cost_per_m: 1.50,
+            output_cost_per_m: 5.00,
+            supports_tools: true,
+            supports_vision: false,
+            supports_streaming: true,
+            aliases: vec!["glm-4.7-code".into()],
+        },
+        // ══════════════════════════════════════════════════════════════
         // Moonshot / Kimi (5)
         // ══════════════════════════════════════════════════════════════
         ModelCatalogEntry {
